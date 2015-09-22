@@ -2,7 +2,7 @@
 __A .Net library to standardize [Spectacles](http://core.thorntontomasetti.com/apps/Spectacles/) exporter development.__  
 
 
-At the moment, the two Spectacles exporters for [Grasshopper](https://github.com/tt-acm/Spectacles.GrasshopperExporter) and [Revit](https://github.com/tt-acm/Spectacles.RevitExporter) each contain code to serialize geometry into .json files that can be loaded by the Spectacles Viewer, and the do so in slightly different ways.  We should standardize and refactor that code into a shared library that can be referenced by all Spectacles exporters to eliminate duplicate code bases, and to standardize the way geometry is serialized into Spectacles.json files.   
+At the moment, the two Spectacles exporters for [Grasshopper](https://github.com/tt-acm/Spectacles.GrasshopperExporter) and [Revit](https://github.com/tt-acm/Spectacles.RevitExporter) each contain code to serialize geometry into .json files that can be loaded by the Spectacles Viewer, and they do so in slightly different ways.  We should standardize and refactor that code into a shared library that can be referenced by all Spectacles exporters to eliminate duplicate code bases, and to standardize the way geometry is serialized into Spectacles.json files.   
 
 
 Standardization will not only help the quality of the exporters, I think it will dramatically improve the stability and cleanliness of the viewer.  A peek at [this bit of code](https://github.com/tt-acm/Spectacles.WebViewer/blob/gh-pages/js/SPECTACLES.js#L973-L989) will help illustrate the current issue:
