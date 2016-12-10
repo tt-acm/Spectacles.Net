@@ -17,13 +17,13 @@ namespace Spectacles.Net.Data
     public string type { get; set; }      // MeshPhongMaterial
 
     [DataMember]
-    public int color { get; set; }        // 16777215
+    public string color { get; set; }        // 16777215
 
-    [DataMember]
-    public int ambient { get; set; }      //16777215
-
-    [DataMember]
-    public int emissive { get; set; }     // 1
+//    [DataMember]
+//    public int ambient { get; set; }      //16777215
+//
+//    [DataMember]
+//    public int emissive { get; set; }     // 1
 
     [DataMember]
     public double opacity { get; set; }   // 1
@@ -34,7 +34,9 @@ namespace Spectacles.Net.Data
     [DataMember]
     public bool wireframe { get; set; }   // false
 
+//    [DataMember]
+//    public int shading { get; set; }      // 1
     [DataMember]
-    public int shading { get; set; }      // 1
+    public int side { get; set; }
   }
 }
